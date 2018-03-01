@@ -9,5 +9,5 @@
 /bin/echo "Done"
 
 /bin/echo "Run ansible to provision configuration ..."
-	/usr/bin/sudo /usr/bin/python2.6 /usr/bin/ansible-playbook ./ansible/site.yml --connection=local
+	/usr/bin/sudo /usr/bin/python27 /usr/bin/ansible-playbook ./ansible/site.yml --connection=local
 /bin/echo "Done"
