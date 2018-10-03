@@ -7,6 +7,4 @@
   yum: name={{ item }} state=present
   with_items:
    - htop
-   - rsync
    - git
-   - fabric

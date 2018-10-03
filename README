@@ -1,0 +1,11 @@
+Your should define variables in variables.json.
+
+As template provided variables.json.template
+
+{
+   "aws_access_key": "",
+   "aws_secret_key": "",
+   "aws_region": ""
+}
+
+RUN packer: packer build -var-file variables.json packer-template.json
