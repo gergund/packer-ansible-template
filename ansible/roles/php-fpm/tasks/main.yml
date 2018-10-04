@@ -1,24 +1,24 @@
-- name: Install default PHP-7.0 set
+- name: Install default PHP-7.1 set
   yum: name={{ item }} state=present
   with_items:
-   - php70.x86_64
-   - php70-bcmath.x86_64
-   - php70-cli.x86_64
-   - php70-common.x86_64
-   - php70-fpm.x86_64
-   - php70-gd.x86_64
-   - php70-gmp.x86_64
-   - php70-intl.x86_64
-   - php70-mbstring.x86_64
-   - php70-mcrypt.x86_64
-   - php70-mysqlnd.x86_64
-   - php70-opcache.x86_64
-   - php70-pdo.x86_64
-   - php70-pecl-redis.x86_64
-   - php70-soap.x86_64
-   - php70-process.x86_64
-   - php70-xml.x86_64
-   - php70-xmlrpc.x86_64
+   - php71.x86_64
+   - php71-bcmath.x86_64
+   - php71-cli.x86_64
+   - php71-common.x86_64
+   - php71-fpm.x86_64
+   - php71-gd.x86_64
+   - php71-gmp.x86_64
+   - php71-intl.x86_64
+   - php71-mbstring.x86_64
+   - php71-mcrypt.x86_64
+   - php71-mysqlnd.x86_64
+   - php71-opcache.x86_64
+   - php71-pdo.x86_64
+   - php71-pecl-redis.x86_64
+   - php71-soap.x86_64
+   - php71-process.x86_64
+   - php71-xml.x86_64
+   - php71-xmlrpc.x86_64
 
 - name: Configure and Restart PHP-FPM
   template: src=www.conf.j2 dest=/etc/php-fpm.d/www.conf
