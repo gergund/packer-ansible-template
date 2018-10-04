@@ -10,5 +10,5 @@ curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin
 /bin/echo "Running composer install"
 /usr/local/bin/composer install \
     && chmod u+x bin/magento \
-    && chown -R www-data:www-data .
+    && chown -R www-data:www-data . \
 && /bin/echo "Done"
