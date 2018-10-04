@@ -4,11 +4,11 @@ sudo mkdir -p /var/www/html && cd /var/www/html/ && sudo git clone https://githu
 && /bin/echo "Done"
 
 /bin/echo "Installing composer"
-curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
+sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
 && /bin/echo "Done"
 
 /bin/echo "Running composer install"
-/usr/local/bin/composer install \
-    && chmod u+x bin/magento \
-    && chown -R www-data:www-data . \
+sudo /usr/local/bin/composer install \
+    && sudo chmod +x bin/magento \
+    && sudo chown -R apache:apache . \
 && /bin/echo "Done"
