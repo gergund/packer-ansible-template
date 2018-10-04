@@ -4,7 +4,7 @@ sudo mkdir -p /var/www/html && cd /var/www/html/ && sudo git clone https://githu
 && /bin/echo "Done"
 
 /bin/echo "Installing composer"
-sudo curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer \
+curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/local/bin --filename=composer \
 && /bin/echo "Done"
 
 /bin/echo "Running composer install"
