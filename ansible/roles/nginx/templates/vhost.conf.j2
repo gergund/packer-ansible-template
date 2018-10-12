@@ -11,6 +11,10 @@ server {
 
     root $MAGE_ROOT/pub;
 
+    location ~ _hc {
+        return 200;
+    }
+
     index index.php;
     autoindex off;
     charset UTF-8;
