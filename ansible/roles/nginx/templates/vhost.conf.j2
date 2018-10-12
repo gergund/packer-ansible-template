@@ -13,6 +13,7 @@ server {
 
     location ~ _hc {
         return 200;
+	default_type text/plain;
     }
 
     index index.php;
