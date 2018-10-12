@@ -9,10 +9,13 @@ curl -sS https://getcomposer.org/installer | sudo php -- --install-dir=/usr/loca
 
 /bin/echo "Running composer install"
 sudo /usr/local/bin/composer install \
-    && sudo chmod +x bin/magento \
-    && sudo chown -R apache:apache . \
+&& sudo chmod +x bin/magento \
 && /bin/echo "Done"
 
 /bin/echo "Adding maintenance page"
-php bin/magento maintenance:enable --ip=104.236.96.121 \
+sudo php bin/magento maintenance:enable --ip=104.236.96.121 \
+&& /bin/echo "Done"
+
+/bin/echo "Chown documentroot"
+sudo chown -R apache:apache /var/www/html/ \
 && /bin/echo "Done"
