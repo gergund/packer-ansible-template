@@ -12,3 +12,7 @@ sudo /usr/local/bin/composer install \
     && sudo chmod +x bin/magento \
     && sudo chown -R apache:apache . \
 && /bin/echo "Done"
+
+/bin/echo "Adding maintenance page"
+php bin/magento maintenance:enable --ip=104.236.96.121 \
+&& /bin/echo "Done"
