@@ -13,7 +13,7 @@ sudo /usr/local/bin/composer install \
 && /bin/echo "Done"
 
 /bin/echo "Adding maintenance page"
-sudo php bin/magento maintenance:enable --ip=104.236.96.121 \
+sudo php bin/magento maintenance:enable --ip=104.236.96.121 --ip=195.14.124.5 \
 && /bin/echo "Done"
 
 /bin/echo "Chown documentroot"
